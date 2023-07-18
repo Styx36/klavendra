@@ -1,0 +1,13 @@
+<div class="header-container">
+    <div class="logo">
+        <img src="" alt="">
+    </div>
+    <div class="navigations">
+        <div class="nav-item" *ngFor="let item of navItems">
+            <a class="item" [href]="item.link">
+                {{item.name | titlecase}}
+            </a>
+        </div>
+    </div>
+    <div class="login"></div>
+</div>
