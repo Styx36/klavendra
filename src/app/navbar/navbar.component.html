@@ -1,13 +1,14 @@
 <div class="header-container">
     <div class="logo">
-        <img src="" alt="">
+        <img src="assets/images/logo_small.jpg" alt="Klavendra" (click)="navHome()">
     </div>
     <div class="navigations">
-        <div class="nav-item" *ngFor="let item of navItems">
-            <a class="item" [href]="item.link">
-                {{item.name | titlecase}}
-            </a>
-        </div>
+        <a class="nav-item" [href]="item.link" *ngFor="let item of navItems">
+            <span>{{item.name | titlecase}}</span>
+        </a>
     </div>
-    <div class="login"></div>
+    <div class="login">
+        <span>Login</span>
+        <mat-icon>login</mat-icon>
+    </div>
 </div>
